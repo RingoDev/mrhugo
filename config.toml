@@ -1,5 +1,5 @@
 # Site settings
-baseurl = "https://ringodev.com"
+baseurl = "/"
 languageCode = "en-us"
 title = "RingoDev"
 theme = "mrhugo"
