@@ -1,0 +1,8 @@
+modalID: 3
+title: Memento 
+date: 2014-07-15
+img: memento.png
+client: Myself 
+clientLink: "//ringodev.com"
+category: Mobile Development with Flutter
+description: This project is a Todolist written from scratch with Flutter. It allows Users to crate Todos and check them off the lsit when they are done. User management and saving of the Todos is handled via integration with Google Firebase. Take a look at the project on my [Github](https://github.com/RingoDev/Memento).
