@@ -2,11 +2,12 @@
 baseurl = "/"
 languageCode = "en-us"
 title = "RingoDev"
-images = ["profile.png"]
 theme = "mrhugo"
 disableKinds = ["taxonomyTerm"]
 
 [params]
+
+    images = ["profile.png"]
 
     # You can use Markdown syntax for urls [text](//url.to/source) for
     # most longer texts.
