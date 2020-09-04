@@ -2,6 +2,7 @@
 baseurl = "/"
 languageCode = "en-us"
 title = "RingoDev"
+images = ["profile.png"]
 theme = "mrhugo"
 disableKinds = ["taxonomyTerm"]
 
