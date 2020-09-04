@@ -107,9 +107,12 @@ disableKinds = ["taxonomyTerm"]
                 link = "//github.com/ringodev"
 
             [[params.footer.social.networks]]
-                icon = "fa-stack-overflow"
-                link=  "//stackoverflow.com/questions/tagged/hugo"
+                icon = "fa-xing"
+                link=  "//xing.com/profile/Thomas_Grininger4"
 
+            [[params.footer.social.networks]]
+                icon = "fa-twitter"
+                link = "//twitter.com/ringodev1"
 
         [params.footer.credits]
             title = "About Freelancer"
