@@ -63,12 +63,6 @@ disableKinds = ["taxonomyTerm"]
 	left = "I am a 22 year-old self-taught developer from Austria."
         right = "I am currently doing a bachelors degree in Business & Informatics at the Johannes-Kepler-University in Linz, Austria."
 
-        [params.about.button]
-            text = "Download theme"
-            link = "//github.com/digitalcraftsman/hugo-freelancer-theme/archive/master.zip"
-            icon = "download"
-
-
     [params.contact]
         title = "Contact"
 
