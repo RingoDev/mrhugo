@@ -1,7 +1,7 @@
 # Site settings
-baseurl = "https://example.org/"
+baseurl = "https://ringodev.com"
 languageCode = "en-us"
-title = "Hugo Freelancer Theme"
+title = "RingoDev"
 theme = "mrhugo"
 
 
@@ -94,7 +94,7 @@ theme = "mrhugo"
 
 
     [params.footer]
-        copyright = "If you found a mistake please open an issue on [GitHub](//github.com/Ringodev/hugo)"
+        copyright = "If you found a mistake please open an issue on [GitHub](//github.com/Ringodev/mrhugo)"
 
 
         [params.footer.social]
