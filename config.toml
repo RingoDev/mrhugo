@@ -38,7 +38,7 @@ disableKinds = ["taxonomyTerm"]
 
     [params.header]
         # Copy your own image into './static/img/'' if you wish
-        image = "profile.png"
+        image = "profile_512px.png"
         name = "Thomas Grininger"
         subtitle = "Student - Programmer - Tech-Enthusiast"
 
