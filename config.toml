@@ -7,7 +7,7 @@ disableKinds = ["taxonomyTerm"]
 
 [params]
 
-    images = ["profile.png"]
+    images = ["img/profile.png"]
 
     # You can use Markdown syntax for urls [text](//url.to/source) for
     # most longer texts.
