@@ -7,3 +7,6 @@
 [submodule "hugo-freelancer-theme"]
 	path = themes/hugo-freelancer-theme
 	url = git@github.com:RingoDev/hugo-freelancer-theme.git
+[submodule "themes/freelancer"]
+	path = themes/freelancer
+	url = https://github.com/RingoDev/hugo-freelancer-theme

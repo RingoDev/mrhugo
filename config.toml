@@ -2,7 +2,7 @@
 baseurl = "/"
 languageCode = "en-us"
 title = "RingoDev"
-theme = "mrhugo"
+theme = "freelancer"
 disableKinds = ["taxonomyTerm"]
 
 [params]
