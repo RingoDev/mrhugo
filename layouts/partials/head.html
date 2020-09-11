@@ -7,7 +7,7 @@
 		<title>{{ .Site.Title }}</title>
 		
 		{{ "<!-- Favicon-->" | safeHTML }}
-		<link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+		<link rel="icon" type="image/x-icon" href="img/{{ with .Site.Params.head.icon }}{{ . }}{{ else }}favicon.ico{{ end }}" />
 		{{ "<!-- Font Awesome icons (free version)-->" | safeHTML }}
 		<script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
 		{{ "<!-- Google fonts-->" | safeHTML }}

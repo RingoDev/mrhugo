@@ -34,6 +34,9 @@ disableKinds = ["taxonomyTerm"]
 	custom_css = []
 	custom_js  = []
 
+    [params.head]
+    	icon = "icon.ico"
+
     [params.navigation]
         brand = "RingoDev's Portfolio"
 
