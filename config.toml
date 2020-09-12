@@ -36,6 +36,9 @@ disableKinds = ["taxonomyTerm"]
 
     [params.head]
     	icon = "icon.ico"
+    	
+    	[[params.head.custom_css]]
+    	    name = "red_theme.css"
 
     [params.navigation]
         brand = "RingoDev's Portfolio"
@@ -43,7 +46,7 @@ disableKinds = ["taxonomyTerm"]
 
     [params.header]
         # Copy your own image into './static/img/'' if you wish
-        image = "profile_512px.png"
+        image = "profile_256px.webp"
         name = "Thomas Grininger"
         subtitle = "Student - Programmer - Tech-Enthusiast"
 
@@ -102,14 +105,17 @@ disableKinds = ["taxonomyTerm"]
             # for more icons. The icons are represented by their corresponding
             # CSS class.
             [[params.footer.social.networks]]
+	    	label = "Github"
                 icon = "fa-github"
                 link = "//github.com/ringodev"
 
             [[params.footer.social.networks]]
+	    	label = "Xing"
                 icon = "fa-xing"
-                link=  "//xing.com/profile/Thomas_Grininger4"
+                link = "//xing.com/profile/Thomas_Grininger4"
 
             [[params.footer.social.networks]]
+	    	label = "Twitter"
                 icon = "fa-twitter"
                 link = "//twitter.com/ringodev1"
 

@@ -1,0 +1,92 @@
+/* primary color: #9a5b5bf2 darker: #843c42 lighter: #a58585*/
+
+.bg-primary {
+    background-color: #9a5b5bf2 !important;
+}
+.btn-primary {
+    color: #fff;
+    background-color: #9a5b5bf2;
+    border-color: #9a5b5bf2;
+    border-top-color: rgba(154, 91, 91, 0.95);
+    border-right-color: rgba(154, 91, 91, 0.95);
+    border-bottom-color: rgba(154, 91, 91, 0.95);
+    border-left-color: rgba(154, 91, 91, 0.95);
+}
+
+#mainNav .navbar-nav li.nav-item a.nav-link.active {
+    color: #fff;
+}
+
+.portfolio-modal .close {
+
+    color: #9a5b5bf2;
+
+}
+
+a {
+    color: #a58585;
+
+}
+
+#mainNav .navbar-nav li.nav-item a.nav-link:hover {
+    color: #9a5b5bf2;
+}
+
+a:hover {
+    color: #843c42;
+    
+}
+
+a.bg-primary:hover, a.bg-primary:focus, button.bg-primary:hover, button.bg-primary:focus {
+    background-color: #843c42 !important;
+}
+
+.btn-primary:hover {
+    background-color: #843c42;
+    border-color: #843c42;
+    border-top-color: rgb(132, 60, 66);
+    border-right-color: rgb(132, 60, 66);
+    border-bottom-color: rgb(132, 60, 66));
+    border-left-color: rgb(132, 60, 66));
+}
+
+.portfolio .portfolio-item .portfolio-item-caption {
+    background-color: rgba(154, 91, 91, 0.95);
+}
+
+.btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active, .show > .btn-primary.dropdown-toggle {
+    background-color: #843c42;
+    border-color: #843c42;
+    border-top-color: rgb(132, 60, 66);
+    border-right-color: rgb(132, 60, 66);
+    border-bottom-color: rgb(132, 60, 66));
+    border-left-color: rgb(132, 60, 66));
+}
+
+.btn-primary:focus, .btn-primary.focus {
+    background-color: #843c42;
+    border-color: #843c42;
+    border-top-color: rgb(132, 60, 66);
+    border-right-color: rgb(132, 60, 66);
+    border-bottom-color: rgb(132, 60, 66));
+    border-left-color: rgb(132, 60, 66));
+    box-shadow: 0 0 0 0.2rem rgba(154, 91, 91, 0.5);
+}
+
+@media (min-width: 992px) {
+
+    #mainNav .navbar-nav > li.nav-item > a.nav-link.active {
+        color: #fff;
+        background: #9a5b5bf2;
+    }
+    #mainNav .navbar-nav > li.nav-item > a.nav-link.active:active,
+    #mainNav .navbar-nav > li.nav-item > a.nav-link.active:focus,
+    #mainNav .navbar-nav > li.nav-item > a.nav-link.active:hover {
+        color: #fff;
+        background: #9a5b5bf2;
+    }
+}
+
+
+
+

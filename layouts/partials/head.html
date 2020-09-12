@@ -15,4 +15,7 @@
 		<link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic&display=swap" rel="stylesheet" type="text/css" />
 		{{ "<!-- Core theme CSS (includes Bootstrap)-->" | safeHTML }}
 		<link href="css/styles.css" rel="stylesheet" />
+		{{ range .Site.Params.head.custom_css }}
+		<link href="css/{{ .name }}" rel="stylesheet" />
+		{{ end }}
 
