@@ -9,7 +9,7 @@
 		{{ "<!-- Favicon-->" | safeHTML }}
 		<link rel="icon" type="image/x-icon" href="img/{{ with .Site.Params.head.icon }}{{ . }}{{ else }}favicon.ico{{ end }}" />
 		{{ "<!-- Font Awesome icons (free version)-->" | safeHTML }}
-		<script src="js/fontawesome-all.js" crossorigin="anonymous"></script>
+		<script src="js/fontawesome-all.js" crossorigin="anonymous" defer></script>
 		{{ "<!-- Google fonts-->" | safeHTML }}
 		<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet" type="text/css" />
 		<link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic&display=swap" rel="stylesheet" type="text/css" />
