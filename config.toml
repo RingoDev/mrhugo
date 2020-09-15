@@ -37,8 +37,8 @@ disableKinds = ["taxonomyTerm"]
     [params.head]
     	icon = "icon.ico"
     	
-    	#[[params.head.custom_css]]
-    	    #name = "red_theme.css"
+    	[[params.head.custom_css]]
+    	    name = "red_theme.css"
 
     [params.navigation]
         brand = "RingoDev's Portfolio"
