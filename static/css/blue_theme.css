@@ -1,0 +1,91 @@
+/* primary color: #9a5b5bf2 darker: #843c42 lighter: #a58585*/
+
+.bg-primary {
+    background-color: #495b6a !important;
+}
+.btn-primary {
+    background-color: #495b6a;
+    border-color: #495b6a;
+    border-top-color: #495b6a;
+    border-right-color: #495b6a;
+    border-bottom-color: #495b6a;
+    border-left-color: #495b6a;
+}
+
+#mainNav .navbar-nav li.nav-item a.nav-link.active {
+    color: #fff;
+}
+
+.portfolio-modal .close {
+
+    color: #495b6a;
+
+}
+
+a {
+    color: #a58585;
+
+}
+
+#mainNav .navbar-nav li.nav-item a.nav-link:hover {
+    color: #6aa08f;
+}
+
+a:hover {
+    color: #6aa08f;
+    
+}
+
+a.bg-primary:hover, a.bg-primary:focus, button.bg-primary:hover, button.bg-primary:focus {
+    background-color: #587d72 !important;
+}
+
+.btn-primary:hover {
+    background-color: #587d72;
+    border-color: #587d72;
+    border-top-color: #587d72;
+    border-right-color: #587d72;
+    border-bottom-color: #587d72;
+    border-left-color: #587d72;
+}
+
+.portfolio .portfolio-item .portfolio-item-caption {
+    background-color: #587d72;
+}
+
+.btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active, .show > .btn-primary.dropdown-toggle {
+    background-color: #6aa08f;
+    border-color: #6aa08f;
+    border-top-color: rgb(132, 60, 66);
+    border-right-color: rgb(132, 60, 66);
+    border-bottom-color: rgb(132, 60, 66));
+    border-left-color: rgb(132, 60, 66));
+}
+
+.btn-primary:focus, .btn-primary.focus {
+    background-color: #587d72;
+    border-color: #587d72;
+    border-top-color: #587d72;
+    border-right-color: #587d72;
+    border-bottom-color: #587d72;
+    border-left-color: #587d72;
+    box-shadow: 0 0 0 0.2rem rgba(154, 91, 91, 0.5);
+}
+
+@media (min-width: 992px) {
+
+    #mainNav .navbar-nav > li.nav-item > a.nav-link.active {
+        color: #fff;
+        background:#587d72;
+    }
+    #mainNav .navbar-nav > li.nav-item > a.nav-link.active:active,
+    #mainNav .navbar-nav > li.nav-item > a.nav-link.active:focus,
+    #mainNav .navbar-nav > li.nav-item > a.nav-link.active:hover {
+        color: #fff;
+        background:#587d72;
+    }
+}
+
+
+
+
