@@ -6,4 +6,3 @@ The result can be viewed at [www.ringodev.com](https://ringodev.com).
 ## Preview
 
 ![Preview_1](/images/main.png)
-Format: ![RingoDev](https://ringodev.com)
