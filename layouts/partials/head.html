@@ -67,7 +67,7 @@
 	
 		{{ "<!-- Core theme CSS (includes Bootstrap)-->" | safeHTML }}
 		<link href="css/styles.css" rel="stylesheet" />
-		{{ range .Site.Params.head.custom_css }}
-		<link href="css/{{ .name }}" rel="stylesheet" />
+		{{ range .Site.Params.custom_css }}
+		<link href="{{ . | absURL }}" rel="stylesheet" />
 		{{ end }}
 
