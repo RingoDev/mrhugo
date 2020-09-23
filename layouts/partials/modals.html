@@ -27,18 +27,18 @@
                             </picture>
                             <!-- Portfolio Modal - Text-->
                             <p class="mb-5">{{ .description | markdownify }}</p>
-                <ul class="list-inline item-details">
-                    <li>{{ with $.Site.Params.portfolio.modal.date }}{{.}}{{ end }}:
-                        <strong>{{ .date }}</strong>
-                    </li>
-                    <li>{{ with $.Site.Params.portfolio.modal.category }}{{.}}{{ end }}:
-                        <strong>{{ .category }}</strong>
-                    </li>
-                    <li>
-                        <strong><a href="{{ .link }}">
-                        {{ with $.Site.Params.portfolio.modal.linkDescription }}{{.}}{{ end }}{{ .host }}</a></strong>
-                    </li>
-                </ul>
+                            <ul class="list-inline item-details">
+                                <li>{{ with $.Site.Params.portfolio.modal.date }}{{.}}{{ end }}:
+                                    <strong>{{ .date }}</strong>
+                                </li>
+                                <li>{{ with $.Site.Params.portfolio.modal.category }}{{.}}{{ end }}:
+                                   <strong>{{ .category }}</strong>
+                                </li>
+                                <li>
+                                    <strong><a href="{{ .link }}">
+                                    {{ with $.Site.Params.portfolio.modal.linkDescription }}{{.}}{{ end }}{{ .host }}</a></strong>
+                                </li>
+                            </ul>
                             <button class="btn btn-primary" data-dismiss="modal">
                                 <i class="fas fa-times fa-fw"></i>
                                 {{ with $.Site.Params.portfolio.modal.buttontext }}{{.}}{{ end }}
