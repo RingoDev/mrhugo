@@ -1,8 +1,0 @@
-modalID: 2
-title: Video Converter 
-date: 2020-09-04 
-img: converter
-client: JKU Linz 
-clientLink: "//jku.at"
-category: Desktop Development 
-description: During the JKU course "Multimediasysteme" we wrote a JavaFX GUI Wrapper for FFmpeg. Take a look at the project on my [Github](https://github.com/RingoDev/JKU_mms_project). 

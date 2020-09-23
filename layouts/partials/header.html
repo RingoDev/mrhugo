@@ -3,7 +3,12 @@
     <div class="container d-flex align-items-center flex-column">
     {{ "<!-- Masthead Avatar Image-->" | safeHTML }}
    
-        <img class="masthead-avatar mb-5" src="img/{{ with .Site.Params.header.image }}{{ . }}{{ else }}profile.png{{ end }}" alt="" />
+
+        <picture>
+            <source srcset="img/{{ with .Site.Params.header.image }}{{ . }}{{ end }}.webp" type="image/webp">
+            <source srcset="img/{{ with .Site.Params.header.image }}{{ . }}{{ end }}.png" type="image/png">
+            <img class="masthead-avatar mb-5" src="img/{{ with .Site.Params.header.image }}{{ . }}{{ end }}.png" alt="">
+        </picture>
         {{ "<!-- Masthead Heading-->" | safeHTML }}
       
         <h1 class="masthead-heading text-uppercase mb-0">{{ with .Site.Params.header.name }}{{ . }}{{ end }}</h1>

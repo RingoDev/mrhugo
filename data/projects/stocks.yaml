@@ -1,0 +1,8 @@
+modalID: 5
+title: Stocks    
+date: 2014-07-15
+img: stocks
+host: Github
+link: //github.com/RingoDev/stocks
+category: Fullstack Development with Vue and Spring-Boot 
+description: This project is a fullstack webapp that allows users to create accounts and enter the positions they are holding to see how their stocks are performing.

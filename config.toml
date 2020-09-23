@@ -28,7 +28,8 @@ disableKinds = ["taxonomyTerm"]
         brand = "RingoDev"
 
     [params.header]
-        image = "profile_512px.webp"
+    # image should be available in webp and png format
+        image = "profile_512px"
         name = "Thomas Grininger"
         subtitle = "Student - Programmer - Tech-Enthusiast"
 
@@ -36,7 +37,7 @@ disableKinds = ["taxonomyTerm"]
         title = "Portfolio"
 
         [params.portfolio.modal]
-            client = "Client"
+            linkDescription = "Check the Project out on "
             date = "Date"
             category = "Category"
             buttontext = "Close"

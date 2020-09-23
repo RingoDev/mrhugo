@@ -1,9 +1,0 @@
-modalID: 4
-title: BetBazar 
-date: 2020-09-04 
-# img needs to exist in /data/projects/ with the formats webp and png
-img: bet
-client: Myself 
-clientLink: "//ringodev.com"
-category: Fullstack Web Development
-description: BetBazar is a Fullstack Webproject combining an Angular Frontend, a Java Spring Backend, with a MongoDB database and user-authentication through Google Firebase. It allows users to place bets which other users can accept.  Take a look at the project on my [Github](https://github.com/RingoDev/BetBazar).
