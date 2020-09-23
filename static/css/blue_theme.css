@@ -23,66 +23,66 @@
 }
 
 a {
-    color: #639485;
+    color: #ecbd34;
 
 }
 
 #mainNav .navbar-nav li.nav-item a.nav-link:hover {
-    color: #6aa08f;
+    color: #f2d070ee;
 }
 
 a:hover {
-    color: #6aa08f;
+    color: #f2d070dd;
     
 }
 
 a.bg-primary:hover, a.bg-primary:focus, button.bg-primary:hover, button.bg-primary:focus {
-    background-color: #587d72 !important;
+    background-color: #f2d070bb !important;
 }
 
 .btn-primary:hover {
-    background-color: #587d72;
-    border-color: #587d72;
-    border-top-color: #587d72;
-    border-right-color: #587d72;
-    border-bottom-color: #587d72;
-    border-left-color: #587d72;
+    background-color: #f2d070bb;
+    border-color: #f2d070bb;
+    border-top-color: #f2d070bb;
+    border-right-color: #f2d070bb;
+    border-bottom-color: #f2d070bb;
+    border-left-color: #f2d070bb;
 }
 
 .portfolio .portfolio-item .portfolio-item-caption {
-    background-color: #587d72;
+    background-color: #f2d070dd;
 }
 
 .btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active, .show > .btn-primary.dropdown-toggle {
-    background-color: #6aa08f;
-    border-color: #6aa08f;
-    border-top-color: rgb(132, 60, 66);
-    border-right-color: rgb(132, 60, 66);
-    border-bottom-color: rgb(132, 60, 66));
-    border-left-color: rgb(132, 60, 66));
+    background-color: #f2d070bb;
+    border-color: #f2d070bb;
+    border-top-color: #f2d070bb;
+    border-right-color: #f2d070bb);
+    border-bottom-color: #f2d070bb;
+    border-left-color: #f2d070bb;
 }
 
 .btn-primary:focus, .btn-primary.focus {
-    background-color: #587d72;
-    border-color: #587d72;
-    border-top-color: #587d72;
-    border-right-color: #587d72;
-    border-bottom-color: #587d72;
-    border-left-color: #587d72;
-    box-shadow: 0 0 0 0.2rem rgba(154, 91, 91, 0.5);
+    background-color: #f2d070bb;
+    border-color: #f2d070bb;
+    border-top-color: #f2d070bb;
+    border-right-color: #f2d070bb;
+    border-bottom-color: #f2d070bb;
+    border-left-color: #f2d070bb;
+    box-shadow: 0 0 0 0.2rem #f2d07080;
 }
 
 @media (min-width: 992px) {
 
     #mainNav .navbar-nav > li.nav-item > a.nav-link.active {
         color: #fff;
-        background:#587d72;
+        background:#f2d070bb;
     }
     #mainNav .navbar-nav > li.nav-item > a.nav-link.active:active,
     #mainNav .navbar-nav > li.nav-item > a.nav-link.active:focus,
     #mainNav .navbar-nav > li.nav-item > a.nav-link.active:hover {
         color: #fff;
-        background:#587d72;
+        background:#f2d070bb;
     }
 }
 
