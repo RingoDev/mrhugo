@@ -1,7 +1,8 @@
 modalID: 4
 title: BetBazar 
 date: 2020-09-04 
-img: bet.webp
+# img needs to exist in /data/projects/ with the formats webp and png
+img: bet
 client: Myself 
 clientLink: "//ringodev.com"
 category: Fullstack Web Development
