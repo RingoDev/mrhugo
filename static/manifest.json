@@ -37,9 +37,15 @@
    "sizes": "192x192",
    "type": "image\/png",
    "density": "4.0"
+  },
+  {
+   "src": "img\/logo_1024px.png",
+   "sizes": "1024x1024",
+   "type": "image\/png"
   }
+  
  ],
-   "start_url": "/",
+   "start_url": "\/",
   "display": "standalone",
   "orientation": "portrait",
   "background_color": "#FFFFFF",
