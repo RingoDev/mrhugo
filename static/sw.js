@@ -1,4 +1,4 @@
-const CACHE_VERSION = 1;
+const CACHE_VERSION = 1.1;
 
 const BASE_CACHE_FILES = [
     '/css/styles.css',
@@ -37,7 +37,7 @@ const MAX_TTL = {
 
 const CACHE_BLACKLIST = [
     (str) => {
-       return true //!str.startsWith('http://localhost') ;
+       return !str.startsWith('https://ringodev.com') ;
     },
 ];
 
