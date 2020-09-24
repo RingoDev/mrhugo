@@ -5,9 +5,9 @@
    
 
         <picture>
-            <source srcset="img/{{ with .Site.Params.header.image }}{{ . }}{{ end }}.webp" type="image/webp">
-            <source srcset="img/{{ with .Site.Params.header.image }}{{ . }}{{ end }}.png" type="image/png">
-            <img class="masthead-avatar mb-5" src="img/{{ with .Site.Params.header.image }}{{ . }}{{ end }}.png" alt="">
+            <source srcset="img/{{ with .Site.Params.header.image }}{{ . }}{{ end }}_240px.webp 1x, img/{{ with .Site.Params.header.image }}{{ . }}{{ end }}_480px.webp 2x, img/{{ with .Site.Params.header.image }}{{ . }}{{ end }}_720px.webp 3x," type="image/webp">
+            <source srcset="img/{{ with .Site.Params.header.image }}{{ . }}{{ end }}_240px.png 1x, img/{{ with .Site.Params.header.image }}{{ . }}{{ end }}_480px.png 2x, img/{{ with .Site.Params.header.image }}{{ . }}{{ end }}_720px.png 3x," type="image/png">
+            <img class="masthead-avatar mb-5" src="img/{{ with .Site.Params.header.image }}{{ . }}{{ end }}_240px.png" alt="">
         </picture>
         {{ "<!-- Masthead Heading-->" | safeHTML }}
       
