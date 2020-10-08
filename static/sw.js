@@ -186,66 +186,57 @@ self.addEventListener(
 
 // The activate handler takes care of cleaning up old caches.
 self.addEventListener(
-    'activate', event => {
-        event.waitUntil(
-            Promise.all(
-                [
-                    cleanupLegacyCache(),
-                ]
-            )
-                .catch(
-                    (err) => {
-                        event.skipWaiting();
-                    }
-                )
-        );
-    }
+  'activate', event => {
+    event.waitUntil(
+      Promise.all(
+        [
+          cleanupLegacyCache(),
+        ]
+      )
+      .catch(
+        (err) => {
+          event.skipWaiting();
+        }
+      )
+    );
+  }
 );
 
 self.addEventListener(
-    'fetch', event => {
-
-        event.respondWith(
-            caches.open(CACHE_VERSIONS.content)
-                .then(
-                    (cache) => {
-
-                        return cache.match(event.request)
-                            .then(
-                                (response) => {
-
-                                    if (response) {
-
-                                        let headers = response.headers.entries();
-                                        let date = null;
-
-                                        for (let pair of headers) {
-                                            if (pair[0] === 'date') {
-                                                date = new Date(pair[1]);
-                                            }
-                                        }
-
-                                        if (date) {
-                                            let age = parseInt((new Date().getTime() - date.getTime()) / 1000);
-                                            let ttl = getTTL(event.request.url);
-
-                                            if (ttl && age > ttl) {
-
-                                                return new Promise(
-                                                    (resolve) => {
-
-                                                        return fetch(event.request)
-                                                            .then(
-                                                                (updatedResponse) => {
-                                                                    if (updatedResponse) {
-                                                                        cache.put(event.request, updatedResponse.clone());
-                                                                        resolve(updatedResponse);
-                                                                    } else {
-                                                                        resolve(response)
-                                                                    }
-                                                                }
-                                                            )
-                                                            .catch(
+  'fetch', event => {
+    event.respondWith(
+      caches.open(CACHE_VERSIONS.content)
+      .then(
+        (cache) => {
+          return cache.match(event.request)
+          .then(
+            (response) => {
+              if (response) {
+                let headers = response.headers.entries();
+                let date = null;
+                for (let pair of headers) {
+                  if (pair[0] === 'date') {
+                    date = new Date(pair[1]);
+                  }
+                }
+               if (date) {
+                 let age = parseInt((new Date().getTime() - date.getTime()) / 1000);
+                 let ttl = getTTL(event.request.url);
+                 if (ttl && age > ttl) {
+                   return new Promise(
+                     (resolve) => {
+                       return fetch(event.request)
+                       .then(
+                         (updatedResponse) => {
+                           if (updatedResponse) {
+                             cache.put(event.request, updatedResponse.clone());
+                             resolve(updatedResponse);
+                           } else {
+                             resolve(response)
+                           }
+                         }
+                       )
+                       .catch(
                          () => {
                            resolve(response);
                          }
@@ -328,7 +319,7 @@ self.addEventListener('notificationclick', function(e) {
   if (action === 'close') {
     notification.close();
   } else {
-    clients.openWindow('https://ringodev.com');
+    clients.openWindow('https://ringodev.com/');
     notification.close();
   }
 });
