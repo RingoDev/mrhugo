@@ -323,3 +323,22 @@ self.addEventListener('notificationclick', function(e) {
     notification.close();
   }
 });
+self.addEventListener('push', function(e) {
+  var options = {
+    body: 'This notification was generated from a push!',
+    icon: 'images/example.png',
+    data: {
+      dateOfArrival: Date.now(),
+      primaryKey: '2'
+    },
+    actions: [
+      {action: 'explore', title: 'Explore this new world',
+        icon: 'img/stocks.png'},
+      {action: 'close', title: 'Close',
+        icon: 'img/blackjack.png'},
+    ]
+  };
+  e.waitUntil(
+    self.registration.showNotification('Hello world!', options)
+  );
+});
