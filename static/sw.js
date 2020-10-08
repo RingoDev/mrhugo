@@ -246,85 +246,78 @@ self.addEventListener(
                                                                 }
                                                             )
                                                             .catch(
-                                                                () => {
-                                                                    resolve(response);
-                                                                }
-                                                            );
-
-                                                    }
-                                                )
-                                                    .catch(
-                                                        (err) => {
-                                                            return response;
-                                                        }
-                                                    );
-                                            } else {
-                                                return response;
-                                            }
-
-                                        } else {
-                                            return response;
-                                        }
-
-                                    } else {
-                                        return null;
-                                    }
-                                }
-                            )
-                            .then(
-                                (response) => {
-                                    if (response) {
-                                        return response;
-                                    } else {
-                                        return fetch(event.request) 
-                                            .then(
-                                                (response) => {
-
-                                                    if(response.status < 400) {
-                                                        if (~SUPPORTED_METHODS.indexOf(event.request.method) && !isBlacklisted(event.request.url)) {
-                                                            cache.put(event.request, response.clone());
-                                                        }
-                                                        return response;
-                                                    } 
-                                                    else {
-                                                        return caches.open(CACHE_VERSIONS.notFound).then((cache) => {
-                                                            return cache.match(NOT_FOUND_PAGE);
-                                                        })
-                                                    }
-                                                }
-                                            )
-                                            .then((response) => {
-                                                if(response) {
-                                                    return response;
-                                                }
-                                            })
-                                            .catch(
-                                                () => {
-
-                                                    return caches.open(CACHE_VERSIONS.offline)
-                                                        .then(
-                                                            (offlineCache) => {
-                                                                return offlineCache.match(OFFLINE_PAGE)
-                                                            }
-                                                        )
-
-                                                }
-                                            )
-                                        
-                                    }
-                                }
-                            )
-                            .catch(
-                                (error) => {
-                                    console.error('  Error in fetch handler:', error);
-                                    throw error;
-                                }
-                            );
+                         () => {
+                           resolve(response);
+                         }
+                       );
+                     }
+                   )
+                   .catch(
+                     (err) => {
+                       return response;
+                     }
+                   );
+                 } else {
+                   return response;
+                 }
+               } else {
+                 return response;
+               }
+             } else {
+               return null;
+             }
+           }
+         )
+         .then(
+           (response) => {
+             if (response) {
+               return response;
+             } else {
+               return fetch(event.request) 
+               .then(
+                 (response) => {
+                   if(response.status < 400) {
+                     if (~SUPPORTED_METHODS.indexOf(event.request.method) && !isBlacklisted(event.request.url)) {
+                       cache.put(event.request, response.clone());
+                     }
+                     return response;
+                    } 
+                    else {
+                      return caches.open(CACHE_VERSIONS.notFound)
+                      .then((cache) => {
+                        return cache.match(NOT_FOUND_PAGE);
+                      })
                     }
+                  }
                 )
-        );
-
-    }
+                .then((response) => {
+                  if(response) {
+                    return response;
+                  }
+                })
+                .catch(
+                  () => {
+                    return caches.open(CACHE_VERSIONS.offline)
+                    .then(
+                      (offlineCache) => {
+                        return offlineCache.match(OFFLINE_PAGE)
+                      }
+                    )
+                  }
+                )
+              }
+            }
+          )
+          .catch(
+            (error) => {
+              console.error('  Error in fetch handler:', error);
+              throw error;
+            }
+          );
+        }
+      )
+    );
+  }
 );
 // is called when the User clicks on the Notification
 self.addEventListener('notificationclick', function(e) {
