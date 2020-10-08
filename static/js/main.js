@@ -13,7 +13,7 @@ function requestNotificationPermission(){
 
 function displayNotification() {
   console.log("trying to display Notification")
-  if (Notification.permission == 'granted') {
+  if (Notification.permission === 'granted') {
     navigator.serviceWorker.getRegistration().then(function(reg) {
       var options = {
         body: 'Here is a notification body!',
@@ -26,5 +26,11 @@ function displayNotification() {
       };
       reg.showNotification('Hello world!', options);
     });
+  } else if (Notification.permission === "blocked") {
+ /* the user has previously denied push. Can't reprompt. */
+    return;
+  } else {
+  /* show a prompt to the user */
+    requestNotificationPermission();
   }
 }
