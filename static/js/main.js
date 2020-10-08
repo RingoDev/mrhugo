@@ -15,7 +15,16 @@ function displayNotification() {
   console.log("trying to display Notification")
   if (Notification.permission == 'granted') {
     navigator.serviceWorker.getRegistration().then(function(reg) {
-      reg.showNotification('Hello world!');
+      var options = {
+        body: 'Here is a notification body!',
+        icon: 'img/logo.png',
+        vibrate: [100, 50, 100],
+        data: {
+          dateOfArrival: Date.now(),
+          primaryKey: 1
+        }
+      };
+      reg.showNotification('Hello world!', options);
     });
   }
 }
