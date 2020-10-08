@@ -26,6 +26,8 @@ function subscribeUser() {
       reg.pushManager.subscribe({
         userVisibleOnly: true
       }).then(function(sub) {
+	console.log('Subscription' ,sub)
+        sendSubscriptionToBackend(sub);
         console.log('Endpoint URL: ', sub.endpoint);
       }).catch(function(e) {
         if (Notification.permission === 'denied') {
@@ -36,6 +38,13 @@ function subscribeUser() {
       });
     })
   }
+}
+
+function sendSubscriptionToBackend(subscription){
+  var xhttp = new XMLHttpRequest();
+  xhttp.open("POST", "https://www.ringodev.xyz:444/subscription/add", true);
+  xhttp.setRequestHeader("Content-type", "application/json;charset=UTF-8");
+  xhttp.send(JSON.stringify(subscription));
 }
 
 function requestNotificationPermission(){
