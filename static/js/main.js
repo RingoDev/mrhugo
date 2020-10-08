@@ -10,3 +10,12 @@ function requestNotificationPermission(){
   }
   return;
 }
+
+function displayNotification() {
+  console.log("trying to display Notification")
+  if (Notification.permission == 'granted') {
+    navigator.serviceWorker.getRegistration().then(function(reg) {
+      reg.showNotification('Hello world!');
+    });
+  }
+}
