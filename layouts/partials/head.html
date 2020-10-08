@@ -84,19 +84,6 @@
 		{{ "<!-- <link href=\"https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap\" rel=\"stylesheet\" type=\"text/css\">  -->" | safeHTML }}
 		{{ "<!-- <link href=\"https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap\" rel=\"stylesheet\" type=\"text/css\">  -->" | safeHTML }}
 		<!-- One Signal JavaScript -->	
-		<script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
-                <script>
-                  window.OneSignal = window.OneSignal || [];
-                  OneSignal.push(function() {
-                    OneSignal.init({
-                      appId: "6a154882-fe49-49b3-8b30-cecf14d8677e",
-                      notifyButton: {
-                        enable: true,
-                      },
-                    });
-                  });
-                </script>
-	
 		{{ "<!-- Core theme CSS (includes Bootstrap)-->" | safeHTML }}
                 <link rel="stylesheet" href="css/styles.css">
 		{{ range .Site.Params.custom_css }}
