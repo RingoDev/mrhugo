@@ -319,7 +319,7 @@ self.addEventListener('notificationclick', function(e) {
   if (action === 'close') {
     notification.close();
   } else {
-    clients.openWindow('https://ringodev.com/');
+    clients.openWindow('https://www.ringodev.com/');
     notification.close();
   }
 });
