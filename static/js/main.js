@@ -3,9 +3,9 @@ if ('serviceWorker' in navigator) {
   navigator.serviceWorker.register('sw.js', { scope: '/' })
   .then(function(reg) {
     //console.log('Service Worker Registered!', reg);
+    checkSubscriptionState(reg);
     reg.pushManager.getSubscription().then(function(sub) {
       if (sub === null) {
-        subscribeUser(); 
       } else {
         sendSubscriptionToBackend(sub); 
       }
@@ -16,6 +16,20 @@ if ('serviceWorker' in navigator) {
   });
 }
 
+function checkSubscriptionState(reg){
+  reg.pushManager.getSubscription().then(function(sub) {
+    var subBtn = document.getElementById("subscribe");
+    var unsubBtn = document.getElementById("unsubscribe");
+    if (sub === null) {
+      // toggle
+      subBtn.style.display = "block";
+      unsubBtn.style.display = "none";
+    }else {
+      subBtn.style.display = "none";
+      unsubBtn.style.display = "block";
+    }
+  });
+}
 
 function subscribeUser() {
   if ('serviceWorker' in navigator) {
@@ -26,6 +40,7 @@ function subscribeUser() {
         userVisibleOnly: true,
 	applicationServerKey: publicKey
       }).then(function(sub) {  
+        checkSubscriptionState(reg);
         sendSubscriptionToBackend(sub);
         //console.log('Endpoint URL: ', sub.endpoint);
       }).catch(function(e) {
