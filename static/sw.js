@@ -326,7 +326,7 @@ self.addEventListener('notificationclick', function(e) {
 self.addEventListener('push', function(e) {
   if(e.data) console.log('Data of push event',e.data.text());
   var options = {
-    body: e.data ? e.data.text() : '',
+    body: e.data ? JSON.parse(e.data.text()).data : '',
     icon: 'img/logo_1024px.png',
     data: {
       dateOfArrival: Date.now(),
