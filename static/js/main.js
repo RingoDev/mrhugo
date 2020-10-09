@@ -28,17 +28,7 @@ function subscribeUser() {
         userVisibleOnly: true,
 	applicationServerKey: publicKey
       }).then(function(sub) {  
-	sub.auth = '';
-	console.log('Subscription' ,{
-            'key': sub.keys.p256dh ? sub.keys.p256dh : '',
-            'auth': sub.keys.auth ? sub.keys.auth : '',
-            'endpoint': sub.endpoint
-	});
-        sendSubscriptionToBackend({
-            'key': sub.keys.p256dh ? sub.keys.p256dh : '',
-            'auth': sub.keys.auth ? sub.keys.auth : '',
-            'endpoint': sub.endpoint
-	});
+        sendSubscriptionToBackend(sub);
         console.log('Endpoint URL: ', sub.endpoint);
       }).catch(function(e) {
         if (Notification.permission === 'denied') {
@@ -52,10 +42,16 @@ function subscribeUser() {
 }
 
 function sendSubscriptionToBackend(subscription){
+  var key = subscription.getKey ? subscription.getKey('p256dh') : '';
+  var auth = subscription.getKey ? subscription.getKey('auth') : '';
   var xhttp = new XMLHttpRequest();
   xhttp.open("POST", "https://www.ringodev.xyz:444/subscription/add", true);
   xhttp.setRequestHeader("Content-type", "application/json;charset=UTF-8");
-  xhttp.send(JSON.stringify(subscription));
+  xhttp.send(JSON.stringify({
+    endpoint: subscription.endpoint,
+    key: key ? btoa(String.fromCharCode.apply(null, new Uint8Array(key))) : '',
+    auth: auth ? btoa(String.fromCharCode.apply(null, new Uint8Array(auth))) : ''
+  }));
 }
 
 function requestNotificationPermission(){
