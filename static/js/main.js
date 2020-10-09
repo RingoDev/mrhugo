@@ -28,7 +28,7 @@ function subscribeUser() {
         userVisibleOnly: true,
 	applicationServerKey: publicKey
       }).then(function(sub) {
-        sub.key = btoa(String.fromCharCode.apply(null,publicKey)) : '';  
+        sub.key = btoa(String.fromCharCode.apply(null,publicKey));  
 	console.log('Subscription' ,sub)
         sendSubscriptionToBackend(sub);
         console.log('Endpoint URL: ', sub.endpoint);
