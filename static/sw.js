@@ -1,4 +1,4 @@
-const CACHE_VERSION = 1.1;
+const CACHE_VERSION = 1.2;
 
 const BASE_CACHE_FILES = [
     '/css/styles.css',
@@ -325,20 +325,20 @@ self.addEventListener('notificationclick', function(e) {
 });
 self.addEventListener('push', function(e) {
   var options = {
-    body: 'This notification was generated from a push!',
-    icon: 'images/example.png',
+    body: 'RingoDev was updated!',
+    icon: 'img/logo_1024px.png',
     data: {
       dateOfArrival: Date.now(),
       primaryKey: '2'
     },
     actions: [
-      {action: 'explore', title: 'Explore this new world',
+      {action: 'explore', title: 'Check it out',
         icon: 'img/stocks.png'},
       {action: 'close', title: 'Close',
         icon: 'img/blackjack.png'},
     ]
   };
   e.waitUntil(
-    self.registration.showNotification('Hello world!', options)
+    self.registration.showNotification('RingoDev received an update!', options)
   );
 });
