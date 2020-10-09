@@ -27,11 +27,18 @@ function subscribeUser() {
       reg.pushManager.subscribe({
         userVisibleOnly: true,
 	applicationServerKey: publicKey
-      }).then(function(sub) {
-        sub.key = btoa(String.fromCharCode.apply(null,publicKey));  
+      }).then(function(sub) {  
 	sub.auth = '';
-	console.log('Subscription' ,sub)
-        sendSubscriptionToBackend(sub);
+	console.log('Subscription' ,{
+            'key' = sub.keys.p256dh ? sub.keys.p256dh : '',
+            'auth' = sub.keys.auth ? sub.keys.auth : '',
+            'endpoint' = sub.endpoint
+	});
+        sendSubscriptionToBackend({
+            'key' = sub.keys.p256dh ? sub.keys.p256dh : '',
+            'auth' = sub.keys.auth ? sub.keys.auth : '',
+            'endpoint' = sub.endpoint
+	});
         console.log('Endpoint URL: ', sub.endpoint);
       }).catch(function(e) {
         if (Notification.permission === 'denied') {
