@@ -5,11 +5,11 @@
             <picture>
                 <source srcset="img/logo.webp 1x, img/logo_80px.webp 2x, img/logo_120px.webp 3x" type="image/webp">
                 <source srcset="img/logo.png 1x, img/logo_80px.webp 2x, img/logo_120px.webp 3x" type="image/png">
-                <img src="img/logo.png" alt="RingoDev logo" style="width:40px; height:40px; margin-right:1rem; margin-top: -4px">
+                <img src="img/logo.png" alt="RingoDev logo" style="width:40px; height:40px; margin-top: -4px">
             </picture>
         {{ with .Site.Params.navigation.brand }}{{ . }}{{ end }}
         </a>
-	<button onclick="requestNotificationPermission()" class="btn btn-secondary">
+	<button onclick="subscribeUser()" class="btn btn-secondary">
 		<i class="far fa-bell fa-lg"></i>
 	</button>
         <button class="ml-auto navbar-toggler navbar-toggler-right text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
