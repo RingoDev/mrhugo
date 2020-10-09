@@ -8,13 +8,6 @@
                 {{ range .Site.Params.footer.social.networks }}
 		<a aria-label="{{ .label }}" href="{{ .link }}" class="btn btn-outline-light btn-social mx-1"><i class="fab fa-fw {{ .icon }}"></i></a>
                         {{ end }}
-
-		<button onclick="displayNotification()" class="btn btn-outline-light btn-social mx-1">
-		  <i class="fab fa-fw fas fa-vial"></i>
-		</button>
-		<button onclick="subscribeUser()" class="btn btn-outline-light btn-social mx-1">
-		  <i class="fab fa-fw fas fa-check"></i>
-		</button>
             </div>
         </div>
     </div>
