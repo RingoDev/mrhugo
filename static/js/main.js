@@ -21,6 +21,7 @@ function checkSubscriptionState(reg){
     var subBtn = document.getElementById("subscribe");
     var unsubBtn = document.getElementById("unsubscribe");
     if (sub === null) {
+      console.log("no Subscription");
       // toggle
       subBtn.style.display = "block";
       unsubBtn.style.display = "none";
