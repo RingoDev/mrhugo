@@ -324,6 +324,7 @@ self.addEventListener('notificationclick', function(e) {
   }
 });
 self.addEventListener('push', function(e) {
+  if(e.data) console.log('Data of push event',e.data.text());
   var options = {
     body: 'RingoDev was updated!',
     icon: 'img/logo_1024px.png',
