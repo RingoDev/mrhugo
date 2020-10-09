@@ -45,7 +45,6 @@ function subscribeUser() {
 }
 
 function sendSubscriptionToBackend(subscription){
- var key: key ? 
   var xhttp = new XMLHttpRequest();
   xhttp.open("POST", "https://www.ringodev.xyz:444/subscription/add", true);
   xhttp.setRequestHeader("Content-type", "application/json;charset=UTF-8");
