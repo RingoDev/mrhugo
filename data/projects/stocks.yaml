@@ -6,4 +6,4 @@ host: Github
 link: //github.com/RingoDev/stocks
 category: Fullstack Development with Vue and Spring-Boot 
 description: This project is a fullstack webapp that allows users to create accounts and enter the positions they are holding to see how their stocks are performing.
-demolink: https://www.ringodev.xyz/
+demolink: https://stocks.ringodev.com/
