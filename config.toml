@@ -29,7 +29,7 @@ disableKinds = ["taxonomyTerm"]
 
     [params.header]
     # image should be available in webp and png format
-        image = "masthead"
+        image = "masthead_2_black"
         name = "Thomas Grininger"
         subtitle = "Student - Programmer - Tech-Enthusiast"
 
