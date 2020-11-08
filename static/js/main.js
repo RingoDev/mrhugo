@@ -77,7 +77,7 @@ function sendSubscriptionToBackend(subscription){
   var key = subscription.getKey ? subscription.getKey('p256dh') : '';
   var auth = subscription.getKey ? subscription.getKey('auth') : '';
   var xhttp = new XMLHttpRequest();
-  xhttp.open("POST", "https://www.ringodev.xyz:444/subscription/add", true);
+  xhttp.open("POST", "https://backend.ringodev.com:444/subscription/add", true);
   xhttp.setRequestHeader("Content-type", "application/json;charset=UTF-8");
   xhttp.send(JSON.stringify({
     endpoint: subscription.endpoint,
