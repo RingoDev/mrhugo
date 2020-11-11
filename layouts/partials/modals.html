@@ -1,7 +1,6 @@
-
-
 {{ range .Site.Data.projects }}
-<div class="portfolio-modal modal fade" id="portfolioModal{{ .modalID }}" tabindex="-1" role="dialog" aria-labelledby="portfolioModal{{ .modalID }}Label" aria-hidden="true">
+<div class="portfolio-modal modal fade" id="portfolioModal{{ .modalID }}" tabindex="-1" role="dialog"
+     aria-labelledby="portfolioModal{{ .modalID }}Label" aria-hidden="true">
     <div class="modal-dialog modal-xl" role="document">
         <div class="modal-content">
             <button class="close" type="button" data-dismiss="modal" aria-label="Close">
@@ -12,7 +11,8 @@
                     <div class="row justify-content-center">
                         <div class="col-lg-8">
                             <!-- Portfolio Modal - Title-->
-			    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" id="portfolioModal{{ .modalID }}Label">{{ .title }}</h2>
+                            <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0"
+                                id="portfolioModal{{ .modalID }}Label">{{ .title }}</h2>
                             <!-- Icon Divider-->
                             <div class="divider-custom">
                                 <div class="divider-custom-line"></div>
@@ -20,31 +20,32 @@
                                 <div class="divider-custom-line"></div>
                             </div>
                             <!-- Portfolio Modal - Image-->
-                            <a href="">
+                            <a href="{{ if .demolink }}{{ .demolink }}{{else}}{{ .link }}{{ end }}">
                                 <picture>
-                            	     <source srcset="img/portfolio/{{ .img }}.webp" type="image/webp">
-				     <source srcset="img/portfolio/{{ .img }}.png" type="image/png">
-				     <img class="img-fluid rounded mb-5" src="img/portfolio/{{ .img }}.png" alt="">
+                                    <source srcset="img/portfolio/{{ .img }}.webp" type="image/webp">
+                                    <source srcset="img/portfolio/{{ .img }}.png" type="image/png">
+                                    <img height="650" width="900" class="img-fluid rounded mb-5"
+                                         src="img/portfolio/{{ .img }}.png" alt="">
                                 </picture>
                             </a>
                             <!-- Portfolio Modal - Text-->
                             <p>{{ .description | markdownify }}</p>
                             <ul class="list-inline item-details">
                                 {{ if .demolink }}
-                            	 <li class="mb-1">
+                                <li class="mb-1">
                                     <strong><a href="{{ .demolink }}">
-                                    Check the result out here!</a></strong>
+                                        Check the result out here!</a></strong>
                                 </li>
                                 {{ end }}
                                 <li>
                                     <strong><a href="{{ .link }}">
-                                    {{ with $.Site.Params.portfolio.modal.linkDescription }}{{.}}{{ end }}{{ .host }}</a></strong>
+                                        {{ with $.Site.Params.portfolio.modal.linkDescription }}{{.}}{{ end }}{{ .host }}</a></strong>
                                 </li>
                                 <li>{{ with $.Site.Params.portfolio.modal.date }}{{.}}{{ end }}:
                                     <strong>{{ .date }}</strong>
                                 </li>
                                 <li>{{ with $.Site.Params.portfolio.modal.category }}{{.}}{{ end }}:
-                                   <strong>{{ .category }}</strong>
+                                    <strong>{{ .category }}</strong>
                                 </li>
                             </ul>
                             <button class="btn btn-primary" data-dismiss="modal">
