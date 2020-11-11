@@ -15,7 +15,7 @@ disableKinds = ["taxonomyTerm"]
     # To provide some metadata for search engines feel free to add a few
     # information about you and your website.
     name = "Thomas Grininger's Projects and Ideas"
-    description = "My awesome description"
+    description = "My name is Thomas Grininger and I am a 22 year-old developer from Austria. I am currently doing a bachelors degree in Business & Informatics at the Johannes-Kepler-University in Linz, Austria."
 
     # Custom assets
 	custom_css = ["css/blue_theme.css"]
@@ -29,7 +29,7 @@ disableKinds = ["taxonomyTerm"]
 
     [params.header]
     # image should be available in webp and png format
-        image = "masthead_2_black"
+        image = "masthead_3"
         name = "Thomas Grininger"
         subtitle = "Student - Programmer - Tech-Enthusiast"
 
