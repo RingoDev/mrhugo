@@ -6,4 +6,4 @@ The result can be viewed [here](https://ringodev.com).
 
 ## Preview
 
-![Preview_1](https://d33wubrfki0l68.cloudfront.net/5fa82efd90363b00071832f1/screenshot.png)
+![Preview_1](https://d33wubrfki0l68.cloudfront.net/602eb2f6b6831f00071a5b26/screenshot.png)
