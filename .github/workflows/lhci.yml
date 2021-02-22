@@ -19,11 +19,6 @@ jobs:
 
       - name: Build
         run: hugo --minify
-        
-      - name: Cheack Hugo build
-        run: |
-          ls
-          ls ./public
 
       - name: Use Node.js 12.x
         uses: actions/setup-node@v1
