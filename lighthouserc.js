@@ -6,7 +6,7 @@ module.exports = {
     upload: {
       target: 'lhci',
       serverBaseUrl: 'https://lighthouse.ringodev.com',
-      token: LHCI_TOKEN, 
+      token: env.LHCI_TOKEN, 
     },
   },
 };
