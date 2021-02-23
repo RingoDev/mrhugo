@@ -1,0 +1,91 @@
+/* primary color: #9a5b5bf2 darker: #843c42 lighter: #a58585*/
+
+.bg-primary {
+    background-color: #495b6a !important;
+}
+.btn-primary {
+    background-color: #495b6a;
+    border-color: #495b6a;
+    border-top-color: #495b6a;
+    border-right-color: #495b6a;
+    border-bottom-color: #495b6a;
+    border-left-color: #495b6a;
+}
+
+#mainNav .navbar-nav li.nav-item a.nav-link.active {
+    color: #fff;
+}
+
+.portfolio-modal .close {
+
+    color: #495b6a;
+
+}
+
+a {
+    color: #ecbd34;
+
+}
+
+#mainNav .navbar-nav li.nav-item a.nav-link:hover {
+    color: #f2d070ee;
+}
+
+a:hover {
+    color: #f2d070dd;
+    
+}
+
+a.bg-primary:hover, a.bg-primary:focus, button.bg-primary:hover, button.bg-primary:focus {
+    background-color: #f2d070bb !important;
+}
+
+.btn-primary:hover {
+    background-color: #f2d070bb;
+    border-color: #f2d070bb;
+    border-top-color: #f2d070bb;
+    border-right-color: #f2d070bb;
+    border-bottom-color: #f2d070bb;
+    border-left-color: #f2d070bb;
+}
+
+.portfolio .portfolio-item .portfolio-item-caption {
+    background-color: #f2d070dd;
+}
+
+.btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active, .show > .btn-primary.dropdown-toggle {
+    background-color: #f2d070bb;
+    border-color: #f2d070bb;
+    border-top-color: #f2d070bb;
+    border-right-color: #f2d070bb);
+    border-bottom-color: #f2d070bb;
+    border-left-color: #f2d070bb;
+}
+
+.btn-primary:focus, .btn-primary.focus {
+    background-color: #f2d070bb;
+    border-color: #f2d070bb;
+    border-top-color: #f2d070bb;
+    border-right-color: #f2d070bb;
+    border-bottom-color: #f2d070bb;
+    border-left-color: #f2d070bb;
+    box-shadow: 0 0 0 0.2rem #f2d07080;
+}
+
+@media (min-width: 992px) {
+
+    #mainNav .navbar-nav > li.nav-item > a.nav-link.active {
+        color: #fff;
+        background:#f2d070bb;
+    }
+    #mainNav .navbar-nav > li.nav-item > a.nav-link.active:active,
+    #mainNav .navbar-nav > li.nav-item > a.nav-link.active:focus,
+    #mainNav .navbar-nav > li.nav-item > a.nav-link.active:hover {
+        color: #fff;
+        background:#f2d070bb;
+    }
+}
+
+
+
+
