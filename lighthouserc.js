@@ -4,7 +4,9 @@ module.exports = {
       staticDistDir: './public/',
     },
     upload: {
-      target: 'temporary-public-storage',
+      target: 'lhci',
+      serverBaseUrl: 'https://your-lhci-server-url.example.com',
+      token: LHCI_TOKEN, 
     },
   },
 };
