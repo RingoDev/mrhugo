@@ -29,3 +29,5 @@ jobs:
         run: |
           npm install -g @lhci/cli@0.7.x
           lhci autorun
+        env:
+          LHCI_TOKEN: d55958d7-dc0a-4b7c-bb49-a03cfe51bd16
