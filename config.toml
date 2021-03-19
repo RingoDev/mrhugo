@@ -45,9 +45,8 @@ disableKinds = ["taxonomyTerm"]
     [params.about]
         title = "About"
         # The about text is splitted into a left and right column
-	left = "I am a 22 year-old self-taught developer from Austria."
-        right = "I am currently doing a bachelors degree in Business & Informatics at the Johannes-Kepler-University in Linz, Austria."
-
+	left = "I am a 22 year-old self-taught developer from Austria. I am currently doing a bachelors degree in Business & Informatics at the Johannes-Kepler-University in Linz, Austria."
+	right = "Recently, I started a business next to my studies. We are designing and developing webprojects for smaller enterprises. Check it out [here](https://web-stories.at)."
     [params.contact]
         title = "Contact"
 
