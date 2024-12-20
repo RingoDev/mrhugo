@@ -24,6 +24,11 @@
         </div>
         {{ "<!-- Masthead Subheading--> " | safeHTML }}
 
-        <p class="masthead-subheading font-weight-light mb-0">{{ with .Site.Params.header.subtitle }}{{ . }}{{ end }}</p>
+        <!--<p class="masthead-subheading font-weight-light mb-0">{{ with .Site.Params.header.subtitle }}{{ . }}{{ end }}</p>
+        --><!-- About Section Content-->
+        <div class="row">
+            <div class="col-lg-4 ml-auto"><p class="lead">{{ with .Site.Params.about.left }}{{ . | markdownify }}{{ end }}</p></div>
+            <div class="col-lg-4 mr-auto"><p class="lead">{{ with .Site.Params.about.right }}{{ . | markdownify }}{{ end }}</p></div>
+        </div>
     </div>
 </header>
