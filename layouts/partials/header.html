@@ -1,6 +1,6 @@
 {{ "<!-- Masthead-->" | safeHTML }}
 <header class="masthead bg-primary text-white text-center">
-    <div class="container d-flex align-items-center flex-column">
+    <div class="container d-flex align-items-center flex-column" id="about">
         {{ "<!-- Masthead Avatar Image--> " | safeHTML }}
 
         <picture>
@@ -8,7 +8,7 @@
                     type="image/webp">
             <source srcset="img/{{ with .Site.Params.header.image }}{{ . }}{{ end }}_320px.png 1x, img/{{ with .Site.Params.header.image }}{{ . }}{{ end }}_640px.png 2x"
                     type="image/png">
-            <img class="masthead-avatar mb-5" height="15rem" width="15rem" style="border-radius: 50%" src="img/{{ with .Site.Params.header.image }}{{ . }}{{ end }}_340px.png"
+            <img class="masthead-avatar mb-5" height="15rem" width="15rem" id="masthead-img" src="img/{{ with .Site.Params.header.image }}{{ . }}{{ end }}_340px.png"
                  alt="">
         </picture>
 

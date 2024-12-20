@@ -82,11 +82,6 @@ disableKinds = ["taxonomy"]
                 link = "//github.com/ringodev"
 
             [[params.footer.social.networks]]
-	    	label = "Xing"
-                icon = "fa-xing"
-                link = "//xing.com/profile/Thomas_Grininger4"
-
-            [[params.footer.social.networks]]
-	    	label = "Twitter"
-                icon = "fa-twitter"
-                link = "//twitter.com/ringodev1"
+            label = "LinkedIn"
+                icon = "fa-linkedin"
+                link = "//linkedin.com/in/thomas-grininger"

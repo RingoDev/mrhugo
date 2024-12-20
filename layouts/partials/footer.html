@@ -6,7 +6,7 @@
             <div class="col-lg-4 mb-5 mb-lg-0">
                 <h3 class="text-uppercase mb-4">{{ with .Site.Params.footer.social.title }}{{.}}{{ end }}</h3>
                 {{ range .Site.Params.footer.social.networks }}
-		<a aria-label="{{ .label }}" href="{{ .link }}" class="btn btn-outline-light btn-social mx-1"><i class="fab fa-fw {{ .icon }}"></i></a>
+		<a aria-label="{{ .label }}" href="{{ .link }}" target="_blank" class="btn btn-outline-light btn-social mx-1"><i class="fab fa-fw {{ .icon }}"></i></a>
                         {{ end }}
             </div>
         </div>
