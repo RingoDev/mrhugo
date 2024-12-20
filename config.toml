@@ -3,7 +3,7 @@ BaseURL = "/"
 LanguageCode = "en-us"
 Title = "RingoDev"
 theme = "freelancer"
-disableKinds = ["taxonomyTerm"]
+disableKinds = ["taxonomy"]
 
 [params]
 
