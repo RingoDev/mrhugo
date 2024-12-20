@@ -17,27 +17,27 @@
                     <div class="control-group">
                         <div class="form-group floating-label-form-group controls">
                             <label for="name">{{ with .Site.Params.contact.form.name.text }}{{.}}{{ end }}</label>
-                            <input class="form-control" name="Name" id="name" type="text" placeholder="{{ with .Site.Params.contact.form.name.text }}{{.}}{{ end }}" required="required" data-validation-required-message="{{ with .Site.Params.contact.form.name.error }}{{.}}{{ end }}" />
+                            <input autocomplete="name" class="form-control" name="Name" id="name" type="text" placeholder="{{ with .Site.Params.contact.form.name.text }}{{.}}{{ end }}" required="required" data-validation-required-message="{{ with .Site.Params.contact.form.name.error }}{{.}}{{ end }}" />
                             <p class="help-block text-danger"></p>
                         </div>
                     </div>
                     <div class="control-group">
                         <div class="form-group floating-label-form-group controls">
                             <label for="email">{{ with .Site.Params.contact.form.email.text }}{{.}}{{ end }}</label>
-                            <input class="form-control" name="Email" id="email" type="email" placeholder="{{ with .Site.Params.contact.form.email.text }}{{.}}{{ end }}" required="required" data-validation-required-message="{{ with .Site.Params.contact.form.email.error }}{{.}}{{ end }}" />
+                            <input autocomplete="email" class="form-control" name="Email" id="email" type="email" placeholder="{{ with .Site.Params.contact.form.email.text }}{{.}}{{ end }}" required="required" data-validation-required-message="{{ with .Site.Params.contact.form.email.error }}{{.}}{{ end }}" />
                             <p class="help-block text-danger"></p>
                         </div>
                     </div>
                     <div class="control-group">
                         <div class="form-group floating-label-form-group controls">
                             <label for="phone">{{ with .Site.Params.contact.form.phone.text }}{{.}}{{ end }}</label>
-                            <input class="form-control" name="Phone" id="phone" type="tel" placeholder="{{ with .Site.Params.contact.form.phone.text }}{{.}}{{ end }}"  />
+                            <input autocomplete="tel" class="form-control" name="Phone" id="phone" type="tel" placeholder="{{ with .Site.Params.contact.form.phone.text }}{{.}}{{ end }}"  />
                             <p class="help-block text-danger"></p>
                         </div>
                     </div>
                     <div>
        		 <input type="hidden"  name="_subject" value="New submission!">
-       		 <input type="text" class="honeypot" netlify-honeypot="bot-field"/>
+       		 <input name="honeypot" type="text" class="honeypot" netlify-honeypot="bot-field"/>
 		    </div>
                     <div class="control-group">
                         <div class="form-group floating-label-form-group controls">
